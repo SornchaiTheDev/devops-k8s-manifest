@@ -47,7 +47,7 @@ function(
             containers: [
               {
                 name: appName,
-                image: constants.registryURL + '/<DOCKER_USERNAME>/' + appName + ':' + vars[namespace].version,
+                image: constants.registryURL + '/sornchaithedev/' + appName + ':' + vars[namespace].version,
                 imagePullPolicy: 'Always',
                 env: mapEnvVars + mapSecretVars,
                 ports: [
